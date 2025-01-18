@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="stylesheet_for_lang.css" type="text/css">
+</head>
+<body>
+    <h3>Fill out the below form to get your programming cravings</h3>
+    <form action="https://httpbin.org/post" method="post">
+        <fieldset id="personal_info">
+            <legend>Personal Info</legend>
+            <p>
+                <label for="firstName">First Name: </label>
+                <input type="text" name="firstName" id="firstName" autocomplete="on" required>
+            </p>
+            <p>
+                <label for="lastName">Last Name: </label>
+                <input type="text" name="lastName" id="lastName" autocomplete="on" required>
+            </p>
+            <p>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" autocomplete="on" required>
+            </p>
+            <p>
+                <label for="phone_number">Ph. No: </label>
+                <input type="tel" name="phone_number" id="phone_number" autocomplete="on" required pattern="[0-9]{10}">
+            </p>
+        </fieldset>
+        <br>
+        <fieldset id="buy_to_learn">
+            <legend>Buy to Learn</legend>
+            <aside>
+                <details>
+                    <summary>Know the Programming language worth</summary>
+                    <table>
+                        <caption>Fees and Period of the Programming Languages</caption>
+                        <thead>
+                           
+                            <tr>
+                                <th scope="col">Programming Languages</th>
+                                <th scope="col">Fees</th>
+                                <th scope="col">Period</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>C</td>
+                                <td>3000</td>
+                                <td>3 months</td>
+                            </tr>
+                            <tr>
+                                <td>C++</td>
+                                <td>3500</td>
+                                <td>3.5 months</td>
+                            </tr>
+                            <tr>
+                                <td>Java</td>
+                                <td>5000</td>
+                                <td>5 months</td>
+                            </tr>
+                            <tr>
+                                <td>Python</td>
+                                <td>4500</td>
+                                <td>3 months</td>
+                            </tr>
+                            <tr>
+                                <td>Swift</td>
+                                <td>5500</td>
+                                <td>5 months</td>
+                            </tr>
+                            <tr>
+                                <td>R</td>
+                                <td>7000</td>
+                                <td>6 months</td>
+                            </tr>
+                            <tr>
+                                <td>HTML</td>
+                                <td>2500</td>
+                                <td>2 months</td>
+                            </tr>
+                            <tr>
+                                <td>Javascript</td>
+                                <td>3000</td>
+                                <td>2.5 months</td>
+                            </tr>
+                            <tr>
+                                <td>PHP</td>
+                                <td>3500</td>
+                                <td>3 months</td>
+                            </tr>
+                            <tr>
+                                <td>Rust</td>
+                                <td>5000</td>
+                                <td>6 months</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </details>
+            </aside>
+            <p>
+                <label for="count">No of Languages you want to learn : </label>
+                <input type="number" name="No_of_Languages" id="count" min="1" max="5" required>
+            </p>
+            
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+        
+
+    </form>
+</body>
+</html>
